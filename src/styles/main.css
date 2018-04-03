@@ -5,12 +5,12 @@
     }
 
     .content,
-    .sidebar_closed{
+    .sidebar_closed .header{
         left: 0;
     }
 
-    .sidebar_opened,
-    .sidebar_opened ~ .content{
+    .sidebar_opened .content,
+    .sidebar_opened .header{
         left: 256px;
         width: calc(100% - 256px) !important;
     }

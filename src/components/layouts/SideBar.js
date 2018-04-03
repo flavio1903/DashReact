@@ -1,4 +1,5 @@
 import React from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 
@@ -6,19 +7,23 @@ export default class SideBar extends React.Component {
 
     constructor(props) {
       super(props);
-      this.state = {open: false};
     }
-  
-    handleToggle = () => this.setState({open: !this.state.open});
   
     render() {
       return (
         <div>
-          <Drawer open={this.state.open}>
-            <MenuItem>Menu Item</MenuItem>
-            <MenuItem>Menu Item 2</MenuItem>
-          </Drawer>
-        </div>
+          <MuiThemeProvider>
+            <Drawer 
+              className="sidebar"
+              open={this.props.open}
+              docked={this.props.drawer_docked}
+              onRequestChange={this.props.handleToggle}
+            >
+              <MenuItem>Menu Item</MenuItem>
+              <MenuItem>Menu Item 2</MenuItem>
+            </Drawer>
+          </MuiThemeProvider>
+      </div>
       );
     }
   }
