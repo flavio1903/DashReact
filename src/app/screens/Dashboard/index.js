@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/layouts/Header';
-import Sidebar from './components/layouts/SideBar';
-import './styles/main.css'
+import Header from './components/Header/Header';
+import Sidebar from './components/SideBar/SideBar';
+import PieChart from './components/ChartPie/ChartPie';
 
-class App extends React.Component {
+class Dashboard extends React.Component {
 
   constructor(props) {
     super();
@@ -53,11 +53,15 @@ class App extends React.Component {
         <Header handleClick={this.handleToggle}/>
         <Sidebar open={this.state.open} drawer_docked={this.state.drawer_docked} handleToggle={this.handleToggle}/>
         <div className="content">
-          asdsadsadsa
+          <div className="row">
+            <div className="col s12">
+              <PieChart />
+            </div>
+          </div>
         </div>
       </div>
     );
   }
 }
 
-export default App;
+export default Dashboard;
