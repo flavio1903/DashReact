@@ -2,6 +2,7 @@ import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
+import { Link } from 'react-router-dom';
 
 export default class SideBar extends React.Component {
 
@@ -19,7 +20,9 @@ export default class SideBar extends React.Component {
               docked={this.props.drawer_docked}
               onRequestChange={this.props.handleToggle}
             >
-              <MenuItem>Menu Item</MenuItem>
+              <MenuItem>
+                <Link to="/adopcion">Adopcion</Link>
+              </MenuItem>
               <MenuItem>Menu Item 2</MenuItem>
             </Drawer>
           </MuiThemeProvider>

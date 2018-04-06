@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import Header from './components/Header/Header';
 import Sidebar from './components/SideBar/SideBar';
 import PieChart from './components/ChartPie/ChartPie';
+import Adopcion from './screens/Adopcion/index';
+import { Router, Route } from 'react-router';
 
 class Dashboard extends React.Component {
 
@@ -53,11 +55,7 @@ class Dashboard extends React.Component {
         <Header handleClick={this.handleToggle}/>
         <Sidebar open={this.state.open} drawer_docked={this.state.drawer_docked} handleToggle={this.handleToggle}/>
         <div className="content">
-          <div className="row">
-            <div className="col s12">
-              <PieChart />
-            </div>
-          </div>
+            <Route path="/adopcion" component={Adopcion}/>
         </div>
       </div>
     );
