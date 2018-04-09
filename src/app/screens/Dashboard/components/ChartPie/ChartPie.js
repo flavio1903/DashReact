@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Chartist from 'chartist';
 import ChartistGraph from 'react-chartist';
  
@@ -23,11 +22,11 @@ class ChartPie extends React.Component {
       }
     };
  
-    var type = 'Bar'
+    var type = 'Line'
  
     return (
       <div>
-        <ChartistGraph data={data} options={options} type={type} />
+        <ChartistGraph className={'ct-octave'} data={data} options={options} type={type} />
       </div>
     )
   }

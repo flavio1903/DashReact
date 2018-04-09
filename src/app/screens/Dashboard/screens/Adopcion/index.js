@@ -1,17 +1,32 @@
 import React from 'react';
 import PieChart from '../../components/ChartPie/ChartPie';
+import Grid from '../../components/Grid/Grid';
+import Row from '../../components/Row/Row';
+import Col from '../../components/Col/Col';
 
 class Adopcion extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="row">
-          <div className="col s12">
+      <Grid>
+        <Row>
+          <Col xs={12}>
             <PieChart />
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col xs={12} md={4}>
+            asdasd
+          </Col>
+          <Col xs={12} md={4}>
+            bbbbbb
+          </Col>
+          <Col xs={12} md={4}>
+            cccccc
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }

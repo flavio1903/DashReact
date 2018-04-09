@@ -1,7 +1,9 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
- 
+import Radium from "radium";
+import styles from './styles.js'
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -10,11 +12,13 @@ class Header extends React.Component {
 
   render(){
     return (
-      <div>
+      <div style={[
+        styles.base,
+        (this.props.open) ? styles.pushed : {}
+      ]}>
         <MuiThemeProvider>
           <AppBar 
-            className = "header"
-            onLeftIconButtonClick = {this.props.handleClick}
+            onLeftIconButtonClick={this.props.toggleSidebar}
           />
         </MuiThemeProvider>
       </div>
@@ -22,4 +26,4 @@ class Header extends React.Component {
   }
 }
  
-export default Header;
+export default Radium(Header);

@@ -15,7 +15,6 @@ export default class SideBar extends React.Component {
         <div>
           <MuiThemeProvider>
             <Drawer 
-              className="sidebar"
               open={this.props.open}
               docked={this.props.drawer_docked}
               onRequestChange={this.props.handleToggle}
