@@ -4,9 +4,9 @@ import styles from './styles.js';
 class Title extends React.Component {
     render(){
         return (
-            <div style={styles.title}>
+            <h1 style={styles.title}>
                 {this.props.children}
-            </div>
+            </h1>
         )
     }
 }

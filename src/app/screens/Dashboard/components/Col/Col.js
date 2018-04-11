@@ -16,7 +16,8 @@ class Col extends React.Component {
                 (this.props.xs) ? styles['xs' + this.props.xs] : {},
                 (this.props.sm) ? styles['sm' + this.props.sm] : {},
                 (this.props.md) ? styles['md' + this.props.md] : {},
-                (this.props.lg) ? styles['lg' + this.props.lg] : {}
+                (this.props.lg) ? styles['lg' + this.props.lg] : {},
+                (this.props.style) ? this.props.style : {}
             ]}>
                 {this.props.children}
             </div>

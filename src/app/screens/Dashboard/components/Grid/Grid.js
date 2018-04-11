@@ -10,7 +10,9 @@ class Grid extends React.Component {
     render(){
         return (
             <div style={styles.base}>
+                <span style={styles.before}></span>
                 {this.props.children}
+                <span style={styles.after}></span>
             </div>
         )  
     }
