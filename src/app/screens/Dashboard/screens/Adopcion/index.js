@@ -4,6 +4,7 @@ import Grid from '../../components/Grid/Grid';
 import Row from '../../components/Row/Row';
 import Col from '../../components/Col/Col';
 import Title from '../../components/Title/Title';
+import DataBox from '../../components/DataBox/DataBox';
 import styles from './styles';
 
 class Adopcion extends React.Component {
