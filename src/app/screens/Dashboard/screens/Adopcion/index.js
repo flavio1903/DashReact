@@ -18,13 +18,13 @@ class Adopcion extends React.Component {
         </Row>
         <Row>
           <Col xs={12} style={styles.box}>
-            <PieChart />
+            <PieChart size="medium"/>
           </Col>
         </Row>
 
         <Row>
           <Col xs={12} md={4} style={styles.box}>
-            asdasd
+            <DataBox/>
           </Col>
           <Col xs={12} md={4} style={styles.box}>
             bbbbbb

@@ -1,7 +1,9 @@
 const styles = {
     base: {
         marginLeft: '-15px',
-        marginRight: '-15px'
+        marginRight: '-15px',
+        marginTop: '15px',
+        marginBottom: '15px'
     },
     before: {
         boxSizing: 'border-box',

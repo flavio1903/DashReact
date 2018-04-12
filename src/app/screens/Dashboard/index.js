@@ -1,9 +1,8 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import Sidebar from './components/SideBar/SideBar';
-import PieChart from './components/ChartPie/ChartPie';
 import Adopcion from './screens/Adopcion/index';
-import { Router, Route } from 'react-router';
+import { Route } from 'react-router';
 import Radium from "radium";
 import styles from './styles.js'
 
