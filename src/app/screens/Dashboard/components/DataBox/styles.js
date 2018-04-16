@@ -16,7 +16,11 @@ const styles = {
         backgroundColor: colors.white
     },
 
-
+    stars: {
+        color: '#333',
+        fontSize: '.8rem',
+        marginRight: '5px'
+    },
     title: {
         fontSize: '1.2rem',
         marginBottom: '5px'
