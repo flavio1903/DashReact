@@ -18,15 +18,18 @@ class Adopcion extends React.Component {
           </Col>
         </Row>
         <Row>
-          <Col xs={12} style={styles.box}>
-            <PieChart size="medium"/>
+          <Col xs={12}>
+            <div style={styles.box}>
+              <PieChart size="medium"/>
+            </div>
           </Col>
         </Row>
+
+        <Row></Row>
 
         <Row>
           <Col xs={12} md={4}>
           <DataBox 
-              icon='android'
               data={[
                 {value: '356', title: 'Usuarios registrados (en el período)'},
               ]}
@@ -38,7 +41,7 @@ class Adopcion extends React.Component {
               icon='android'
               data={[
                 {value: '250', title: 'Descargas'},
-                {value: '4.3', text: '501 en total', review: true}
+                {value: '4.3', review: true, total: '501'}
               ]}
             />
           </Col>
@@ -48,7 +51,7 @@ class Adopcion extends React.Component {
               icon='ios'
               data={[
                 {value: '255', title: 'Descargas'},
-                {value: '4', text: '245 en total', review: true}
+                {value: '4', review: true, total: '200'}
               ]}
             />
           </Col>

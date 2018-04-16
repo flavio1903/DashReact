@@ -4,6 +4,10 @@ import Row from '../../components/Row/Row';
 import Col from '../../components/Col/Col';
 import styles from './styles';
 
+import FaAndroid from 'react-icons/lib/fa/android';
+import FaApple from 'react-icons/lib/fa/apple';
+import FaUser from 'react-icons/lib/fa/user';
+
 class DataBox extends React.Component {
     render(){
         if(this.props.data){
@@ -14,11 +18,18 @@ class DataBox extends React.Component {
                 ]}>
                     <Row>
                     {
+                        (this.props.icon != null) ? <div style={styles.icon}>
+                            {(this.props.icon === 'android') ? <FaAndroid/> : ''}
+                            {(this.props.icon === 'ios') ? <FaApple/> : ''}
+                        </div> : ''
+                    }
+                    {
                         this.props.data.map((data_info, i) =>  {
                             return(
                                 <Col key={i} xs={12 / this.props.data.length}>
-                                    <div>{data_info.title}</div>
-                                    <div>{data_info.value}</div>
+                                    {(data_info.title != null) ? <div style={styles.title}>{data_info.title}</div> : ''}
+                                    {(data_info.value != null) ? <div style={styles.value}>{data_info.value}</div> : ''}
+                                    {(data_info.total != null) ? <div style={styles.total}><FaUser/> {data_info.total} en total</div> : ''}
                                 </Col>
                             )
                         })

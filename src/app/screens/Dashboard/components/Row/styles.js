@@ -3,7 +3,8 @@ const styles = {
         marginLeft: '-15px',
         marginRight: '-15px',
         marginTop: '15px',
-        marginBottom: '15px'
+        marginBottom: '15px',
+        position: 'relative'
     },
     before: {
         boxSizing: 'border-box',

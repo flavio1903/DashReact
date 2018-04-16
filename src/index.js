@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Route } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 import { BrowserRouter } from 'react-router-dom'
+import RoutesConfig from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker';
+import routes from './app/config/Routes';
 import Dashboard from './app/screens/Dashboard/index';
-import {StyleRoot} from "radium";
+import Radium, {StyleRoot} from "radium";
 
 
 ReactDOM.render(
@@ -22,5 +24,7 @@ registerServiceWorker();
 
 /*
 https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html
+http://fraserxu.me/react-chartist/
+https://formidable.com/open-source/radium/docs/api/
 
 */
