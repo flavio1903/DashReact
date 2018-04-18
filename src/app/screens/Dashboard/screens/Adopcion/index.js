@@ -30,6 +30,7 @@ class Adopcion extends React.Component {
         <Row>
           <Col xs={12} md={4}>
           <DataBox 
+              icon='user'
               data={[
                 {value: '356', title: 'Usuarios registrados (en el período)'},
               ]}

@@ -15,6 +15,7 @@ const styles = {
     },
 
     row: {
+        height: '100px',
         marginTop: '0',
         marginBottom: '0'
     },
@@ -39,6 +40,19 @@ const styles = {
         opacity: '.2',
         position: 'absolute',
         top: '-41px',
+
+
+        background: '#999',
+        color: '#FFF',
+        fontSize: '40px',
+        lineHeight: '20px',
+        marginLeft: '0px',
+        borderRadius: '50%',
+        padding: '15px',
+        boxShadow: '0 0 2px #CCC',
+        left: '15px',
+        top: '0px',
+        opacity: '1'
     }
 }
 

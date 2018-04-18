@@ -19,6 +19,7 @@ class DataBox extends React.Component {
                         (this.props.icon != null) ? <div style={styles.icon}>
                             {(this.props.icon === 'android') ? <FaAndroid/> : ''}
                             {(this.props.icon === 'ios') ? <FaApple/> : ''}
+                            {(this.props.icon === 'user') ? <FaUser/> : ''}
                         </div> : ''
                     }
                     {
