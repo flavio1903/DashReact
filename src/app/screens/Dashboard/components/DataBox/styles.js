@@ -2,7 +2,8 @@ import colors from '../../../../config/Colors'
 
 const styles = {
     base: {
-        borderRadius: '5px',
+        backgroundColor: colors.white,
+        boxShadow: '0 4px 2px -4px grey',
         padding: '10px',
         textAlign: 'center'
     },
@@ -12,8 +13,10 @@ const styles = {
     ios: {
         backgroundColor: colors.ios
     },
-    white: {
-        backgroundColor: colors.white
+
+    row: {
+        marginTop: '0',
+        marginBottom: '0'
     },
 
     stars: {

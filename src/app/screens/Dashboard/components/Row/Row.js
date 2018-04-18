@@ -10,7 +10,10 @@ class Row extends React.Component {
 
     render(){
         return (
-            <div style={styles.base}>
+            <div style={[
+                    styles.base, 
+                    (this.props.styles != null) ? this.props.styles : {}
+                ]}>
                 <span style={styles.before}></span>
                 {this.props.children}
                 <span style={styles.after}></span>

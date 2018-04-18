@@ -13,11 +13,8 @@ class DataBox extends React.Component {
     render(){
         if(this.props.data){
             return(
-                <div style={[
-                    styles.base,
-                    (this.props.color) ? styles[this.props.color] : styles.white
-                ]}>
-                    <Row>
+                <div style={styles.base}>
+                    <Row styles={styles.row}>
                     {
                         (this.props.icon != null) ? <div style={styles.icon}>
                             {(this.props.icon === 'android') ? <FaAndroid/> : ''}
