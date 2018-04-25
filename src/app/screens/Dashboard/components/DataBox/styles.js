@@ -3,7 +3,7 @@ import colors from '../../../../config/Colors'
 const styles = {
     base: {
         backgroundColor: colors.white,
-        boxShadow: '0 4px 2px -4px grey',
+        boxShadow: '#bbb 0px 5px 3px -4px',
         padding: '10px',
         textAlign: 'center'
     },
@@ -21,6 +21,7 @@ const styles = {
     },
     title: {
         fontSize: '1.1rem',
+        lineHeight: '1.3',
         marginBottom: '5px'
     },
     value: {
@@ -35,10 +36,10 @@ const styles = {
         color: '#FFF',
         left: '50%',
         lineHeight: '20px',
-        fontSize: '40px',
-        marginLeft: '-40px',
+        fontSize: '35px',
+        marginLeft: '-30px',
         opacity: '1',
-        padding: '15px',
+        padding: '12px',
         position: 'absolute',
         top: '-30px'
     }

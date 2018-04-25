@@ -4,7 +4,7 @@ import Sidebar from './components/SideBar/SideBar';
 import Adopcion from './screens/Adopcion/index';
 import { Route } from 'react-router';
 import Radium from "radium";
-import styles from './styles.js'
+import styles from './styles.js';
 
 class Dashboard extends React.Component {
 

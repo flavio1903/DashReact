@@ -5,6 +5,7 @@ import Row from '../../components/Row/Row';
 import Col from '../../components/Col/Col';
 import Title from '../../components/Title/Title';
 import DataBox from '../../components/DataBox/DataBox';
+import Selector from '../../components/Selector/Selector';
 import styles from './styles';
 
 import FaAndroid from 'react-icons/lib/fa/android';
@@ -19,6 +20,11 @@ class Adopcion extends React.Component {
         <Row>
           <Col xs={12}>
             <Title>Adopcion</Title>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12}>
+            <Selector/>
           </Col>
         </Row>
         <Row>

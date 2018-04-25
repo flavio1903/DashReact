@@ -5,6 +5,8 @@ import {List, ListItem} from 'material-ui/List';
 import MenuItem from 'material-ui/MenuItem';
 import { Link } from 'react-router-dom';
 
+import Logo from '../../components/Logo/Logo';
+
 import FaBarChart from 'react-icons/lib/fa/bar-chart';
 import FaUser from 'react-icons/lib/fa/user';
 import FaCogs from 'react-icons/lib/fa/cogs';
@@ -40,7 +42,11 @@ export default class SideBar extends React.Component {
             docked={this.props.drawer_docked}
             onRequestChange={this.props.handleToggle}
           >
+            <Logo styles={{backgroundColor: '#333', height:'50px'}}/>
             <List>
+              <div>
+                
+              </div>
               <ListItem
                 primaryText="Analytics"
                 leftIcon={<FaBarChart />}
@@ -65,7 +71,7 @@ export default class SideBar extends React.Component {
                     key={4}
                     primaryText="Beneficios (beta)"
                     containerElement={<Link to="/beneficios" />}
-                  />,
+                  />
                 ]}
               />
 
@@ -103,14 +109,14 @@ export default class SideBar extends React.Component {
                     containerElement={<Link to="/chatbot" />}
                   />
                 ]}
-              />,
+              />
 
               <ListItem
                 key={6}
                 primaryText="Social"
                 containerElement={<Link to="/social" />}
                 leftIcon={<FaGroup />}
-              />,
+              />
               <ListItem
                 key={7}
                 primaryText="Salir"
