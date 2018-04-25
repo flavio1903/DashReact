@@ -7,52 +7,40 @@ const styles = {
         padding: '10px',
         textAlign: 'center'
     },
-    android: {
-        backgroundColor: colors.android
-    },
-    ios: {
-        backgroundColor: colors.ios
-    },
-
     row: {
+        alignItems: 'center',
         height: '100px',
+        display: 'flex',
         marginTop: '0',
         marginBottom: '0'
     },
-
     stars: {
         color: '#333',
         fontSize: '.8rem',
         marginRight: '5px'
     },
     title: {
-        fontSize: '1.2rem',
+        fontSize: '1.1rem',
         marginBottom: '5px'
     },
     value: {
         fontSize: '2.5rem',
-        fontWeight: '600'
+        fontWeight: '600',
+        lineHeight: '1'
     },
     icon: {
-        left: '50%',
-        fontSize: '152px',
-        marginLeft: '-63.5px',
-        opacity: '.2',
-        position: 'absolute',
-        top: '-41px',
-
-
         background: '#999',
-        color: '#FFF',
-        fontSize: '40px',
-        lineHeight: '20px',
-        marginLeft: '0px',
         borderRadius: '50%',
-        padding: '15px',
         boxShadow: '0 0 2px #CCC',
-        left: '15px',
-        top: '0px',
-        opacity: '1'
+        color: '#FFF',
+        left: '50%',
+        lineHeight: '20px',
+        fontSize: '40px',
+        marginLeft: '-40px',
+        opacity: '1',
+        padding: '15px',
+        position: 'absolute',
+        top: '-30px'
     }
 }
 

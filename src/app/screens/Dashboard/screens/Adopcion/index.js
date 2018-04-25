@@ -7,6 +7,10 @@ import Title from '../../components/Title/Title';
 import DataBox from '../../components/DataBox/DataBox';
 import styles from './styles';
 
+import FaAndroid from 'react-icons/lib/fa/android';
+import FaApple from 'react-icons/lib/fa/apple';
+import FaUser from 'react-icons/lib/fa/user';
+
 class Adopcion extends React.Component {
 
   render() {
@@ -30,16 +34,15 @@ class Adopcion extends React.Component {
         <Row>
           <Col xs={12} md={4}>
           <DataBox 
-              icon='user'
               data={[
-                {value: '356', title: 'Usuarios registrados (en el período)'},
+                {value: '356', title: 'Usuarios registrados <br>(en el período)'},
               ]}
             />
           </Col>
           <Col xs={12} md={4}>
             <DataBox 
-              color='android'
-              icon='android'
+              styles={styles.android}
+              icon={<FaAndroid/>}
               data={[
                 {value: '250', title: 'Descargas'},
                 {value: '4.3', review: true, total: '501'}
@@ -48,8 +51,8 @@ class Adopcion extends React.Component {
           </Col>
           <Col xs={12} md={4}>
           <DataBox 
-              color='ios'
-              icon='ios'
+              styles={styles.ios}
+              icon={<FaApple/>}
               data={[
                 {value: '255', title: 'Descargas'},
                 {value: '4', review: true, total: '200'}
