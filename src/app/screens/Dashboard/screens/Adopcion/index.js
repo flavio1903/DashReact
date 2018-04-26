@@ -5,6 +5,7 @@ import Row from '../../components/Row/Row';
 import Col from '../../components/Col/Col';
 import Title from '../../components/Title/Title';
 import DataBox from '../../components/DataBox/DataBox';
+import DateRange from '../../components/DateRange/DateRange';
 import Selector from '../../components/Selector/Selector';
 import styles from './styles';
 
@@ -23,8 +24,11 @@ class Adopcion extends React.Component {
           </Col>
         </Row>
         <Row>
-          <Col xs={12}>
+          <Col xs={12} md={6}>
             <Selector/>
+          </Col>
+          <Col xs={12} md={6}>
+            <DateRange/>
           </Col>
         </Row>
         <Row>
@@ -39,7 +43,7 @@ class Adopcion extends React.Component {
 
         <Row>
           <Col xs={12} md={4}>
-          <DataBox 
+            <DataBox 
               data={[
                 {value: '356', title: 'Usuarios registrados <br>(en el período)'},
               ]}

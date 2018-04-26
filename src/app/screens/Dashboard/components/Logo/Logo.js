@@ -6,7 +6,6 @@ import logo from '../../../../assets/images/ic_logo.png';
 class Logo extends React.Component {
     
     render(){
-        console.log(logo);
         return (
             <span style={[
                 ((this.props.styles) ? this.props.styles: {}),

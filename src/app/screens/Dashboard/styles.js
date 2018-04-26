@@ -15,6 +15,11 @@ const styles = {
         [mediaqueries.medium_and_up]: {
             width: 'calc(100% - 256px)'
         }
+    },
+    pulled: {
+        [mediaqueries.medium_and_up]: {
+            width: 'calc(100% - 80px)'
+        }
     }
 }
 

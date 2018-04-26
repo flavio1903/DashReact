@@ -1,4 +1,5 @@
 import React from 'react';
+import Radium, {Style} from 'radium';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Drawer from 'material-ui/Drawer';
 import {List, ListItem} from 'material-ui/List';
@@ -8,12 +9,14 @@ import { Link } from 'react-router-dom';
 import Logo from '../../components/Logo/Logo';
 
 import FaBarChart from 'react-icons/lib/fa/bar-chart';
-import FaUser from 'react-icons/lib/fa/user';
+import FaHeadphones from 'react-icons/lib/fa/headphones';
 import FaCogs from 'react-icons/lib/fa/cogs';
 import FaGroup from 'react-icons/lib/fa/group';
 import FaPowerOff from 'react-icons/lib/fa/power-off';
 
-export default class SideBar extends React.Component {
+import styles from './styles'
+
+class SideBar extends React.Component {
 
   state = {
     open: false,
@@ -32,21 +35,21 @@ export default class SideBar extends React.Component {
   };
 
   render() {
-  
-
     return (
       <div>
         <MuiThemeProvider>
           <Drawer 
+            containerClassName='sideBarDrawer'
             open={this.props.open}
             docked={this.props.drawer_docked}
             onRequestChange={this.props.handleToggle}
           >
+            <Style
+              rules={(!this.props.open) ? styles.drawerClosed_Style : {}}
+            />
+
             <Logo styles={{backgroundColor: '#333', height:'50px'}}/>
             <List>
-              <div>
-                
-              </div>
               <ListItem
                 primaryText="Analytics"
                 leftIcon={<FaBarChart />}
@@ -77,7 +80,7 @@ export default class SideBar extends React.Component {
 
               <ListItem
                 primaryText="Atención al cliente"
-                leftIcon={<FaUser />}
+                leftIcon={<FaHeadphones />}
                 primaryTogglesNestedList={true}
                 nestedItems={[
                   <ListItem
@@ -130,3 +133,6 @@ export default class SideBar extends React.Component {
     );
   }
 }
+
+
+export default Radium(SideBar);

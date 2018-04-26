@@ -1,6 +1,8 @@
+import ScreenSizes from './ScreenSizes'
+
 export default {
-    small_and_up: '@media screen and (min-width: 576px)',
-    medium_and_up: '@media screen and (min-width: 768px)',
-    large_and_up: '@media screen and (min-width: 992px)',
-    extralarge_and_up: '@media screen and (min-width: 1200px)'
+    small_and_up: '@media screen and (min-width: ' + ScreenSizes.width.small + 'px)',
+    medium_and_up: '@media screen and (min-width: ' + ScreenSizes.width.medium + 'px)',
+    large_and_up: '@media screen and (min-width: ' + ScreenSizes.width.large + 'px)',
+    extralarge_and_up: '@media screen and (min-width: ' + ScreenSizes.width.extralarge + 'px)',
 }

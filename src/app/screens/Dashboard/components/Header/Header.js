@@ -14,7 +14,7 @@ class Header extends React.Component {
     return (
       <div style={[
         styles.base,
-        (this.props.open) ? styles.pushed : {}
+        (this.props.open) ? styles.pushed : styles.pulled
       ]}>
         <MuiThemeProvider>
           <AppBar 

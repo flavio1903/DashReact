@@ -57,7 +57,7 @@ class Dashboard extends React.Component {
         />
         <div style={[
           styles.content,
-          (this.state.open) ? styles.pushed : {}
+          (this.state.open) ? styles.pushed : styles.pulled
         ]}>
             <Route path="/" component={Adopcion}/>
         </div>

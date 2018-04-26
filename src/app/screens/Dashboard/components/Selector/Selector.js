@@ -23,6 +23,7 @@ export default class Selector extends React.Component {
         return(
             <MuiThemeProvider>
               <SelectField
+                floatingLabelText=" "
                 value={this.state.value}
                 onChange={this.handleChange}
                 maxHeight={200}
