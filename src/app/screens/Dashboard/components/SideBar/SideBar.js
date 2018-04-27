@@ -1,7 +1,8 @@
 import React from 'react';
 import Radium, {Style} from 'radium';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Drawer from 'material-ui/Drawer';
+//import Drawer from 'material-ui/Drawer';
+import Drawer from '../../components/Drawer/Drawer';
 import {List, ListItem} from 'material-ui/List';
 import MenuItem from 'material-ui/MenuItem';
 import { Link } from 'react-router-dom';
@@ -39,15 +40,11 @@ class SideBar extends React.Component {
       <div>
         <MuiThemeProvider>
           <Drawer 
-            containerClassName='sideBarDrawer'
+            containerStyle={(!this.props.open) ? styles.drawerClosed : {}}
             open={this.props.open}
             docked={this.props.drawer_docked}
             onRequestChange={this.props.handleToggle}
           >
-            <Style
-              rules={(!this.props.open) ? styles.drawerClosed_Style : {}}
-            />
-
             <Logo styles={{backgroundColor: '#333', height:'50px'}}/>
             <List>
               <ListItem
