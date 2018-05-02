@@ -15,7 +15,7 @@ const styles = {
     },
     pulled: {
         [mediaqueries.medium_and_up]: {
-            width: 'calc(100% - 80px)'
+            width: 'calc(100% - 60px)'
         }
     }
 }

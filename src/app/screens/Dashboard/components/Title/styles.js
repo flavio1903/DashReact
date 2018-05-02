@@ -3,7 +3,7 @@ const styles = {
         fontSize: '2.5rem',
         fontWeight: '400',
         marginTop: '0',
-        marginBottom: '15px'
+        marginBottom: '0'
     }
 }
 

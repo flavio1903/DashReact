@@ -3,20 +3,30 @@ import Radium from 'radium';
 import styles from './styles';
 
 class Drawer extends React.Component {
+    
+
+    handleClick = () => {
+        this.setState({open: false});
+    }
 
     render(){
+        this.state = {
+            open: this.props.open
+        }
+
         return(
             <div>
                 <div style={[
                     styles.container,
-                    (this.props.open) ? styles.container.opened : {}
+                    (this.state.open) ? styles.container.opened : {}
                 ]}>
                     {this.props.children}
                 </div>
                 <div style={[
                     styles.overlay,
-                    (this.props.open) ? styles.overlay.opened : {}
-                ]}></div>
+                    (this.state.open) ? styles.overlay.opened : {}
+                ]}
+                onClick={this.handleClick}></div>
             </div>
         )
     }

@@ -17,7 +17,7 @@ export default {
         },
         [mediaqueries.medium_and_up]: {
             transition: 'width 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms',
-            width: '80px'
+            width: '60px'
         },
 
         opened: {

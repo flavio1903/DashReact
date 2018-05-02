@@ -9,7 +9,7 @@ const links = [
     {
         text: 'Analytics',
         icon: <FaBarChart />,
-        links: [
+        items: [
             {text: 'Adopción',link: '/adopcion'},
             {text: 'Actividad',link: '/actividad'},
             {text: 'Transacción',link: '/transaccion'},
@@ -19,7 +19,7 @@ const links = [
     {
         text: 'Atención al cliente',
         icon: <FaUser />,
-        links: [
+        items: [
             {text: 'Perfil de cliente',link: '/perfil'},
             {text: 'Video Chat',link: '/videochat'}
         ]
@@ -27,7 +27,7 @@ const links = [
     {
         text: 'Configuración',
         icon: <FaCogs />,
-        links: [
+        items: [
             {text: 'Permisos',link: '/permisos'},
             {text: 'Chatbot',link: '/chatbot'}
         ]
