@@ -56,7 +56,7 @@ const createListMobile = (node, index, firstLoop) => {
       key={index}
       primaryText={(node.text && !firstLoop) ? node.text : null}
       leftIcon={(node.icon) ? node.icon :  null}
-      insetChildren={true}
+      insetChildren={false}
       menuItems={children}
     />
   );

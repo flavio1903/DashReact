@@ -30,9 +30,8 @@ const styles = {
         lineHeight: '1'
     },
     icon: {
-        background: '#999',
+        background: '#FFF',
         borderRadius: '50%',
-        boxShadow: '0 0 2px #CCC',
         color: '#FFF',
         left: '50%',
         lineHeight: '20px',

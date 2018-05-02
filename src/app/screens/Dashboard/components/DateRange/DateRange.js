@@ -49,7 +49,11 @@ class DateRange extends React.Component {
                         floatingLabelText="Desde"
                         defaultDate={this.state.minDate}
                         disableYearSelection={this.state.disableYearSelection}
-                        style={styles.input}
+                        style={
+                            (this.props.style) ? this.props.style : styles.input
+                        }
+                        textFieldStyle={styles.textField}
+                        underlineStyle={(this.props.underlineStyle) ? this.props.underlineStyle : {}}
                     />
                     <DatePicker
                         onChange={this.handleChangeMaxDate}
@@ -57,7 +61,11 @@ class DateRange extends React.Component {
                         floatingLabelText="Hasta"
                         defaultDate={this.state.maxDate}
                         disableYearSelection={this.state.disableYearSelection}
-                        style={styles.input}
+                        style={
+                            (this.props.style) ? this.props.style : styles.input
+                        }
+                        textFieldStyle={styles.textField}
+                        underlineStyle={(this.props.underlineStyle) ? this.props.underlineStyle : {}}
                     />
                 </div>
             </MuiThemeProvider>

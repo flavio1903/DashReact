@@ -8,11 +8,26 @@ const styles = {
         paddingTop: '15px'
     },
     android: {
-        backgroundColor: colors.android
+        color: colors.android
     },
     ios: {
-        backgroundColor: colors.ios
+        color: colors.ios
     },
+
+    inputs: {
+        background: '#FFF',
+        display: 'inline-block',
+        height: '52px',
+        paddingLeft: '15px',
+        paddingRight: '15px',
+
+        nounderline: {
+            display: 'none'
+        },
+        textField: {
+
+        }
+    }
 }
 
 export default styles;

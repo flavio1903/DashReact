@@ -10,7 +10,9 @@ import FaEnvelope from 'react-icons/lib/fa/envelope';
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      notifications: 0
+    };
   }
 
   render(){
@@ -25,10 +27,11 @@ class Header extends React.Component {
           >
             <div>
               <div></div>
-              <div>
+              <div style={styles.rightitems}>
                 <FaEnvelope/>
+                <span style={styles.rightitems.notifications}>{this.state.notifications}</span>
               </div>
-              <div>
+              <div style={styles.rightitems}>
                 <Avatar/>
               </div>
             </div>

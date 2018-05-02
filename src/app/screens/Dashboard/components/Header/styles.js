@@ -17,6 +17,29 @@ const styles = {
         [mediaqueries.medium_and_up]: {
             width: 'calc(100% - 60px)'
         }
+    },
+    rightitems: {
+        display: 'inline-block',
+        color: '#FFF',
+        fontSize: '25px',
+        marginLeft: '30px',
+        position: 'relative',
+        verticalAlign: 'middle',
+
+        notifications: {
+            backgroundColor: '#CCC',
+            borderRadius: '50%',
+            bottom: '-9px',
+            color: '#FFF',
+            display: 'inline-block',
+            fontSize: '12px',
+            lineHeight: '1',
+            padding: '3px 0',
+            position: 'absolute',
+            right: '-9px',
+            textAlign: 'center',
+            width: '18px'
+        }
     }
 }
 

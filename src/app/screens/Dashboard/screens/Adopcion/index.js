@@ -1,5 +1,5 @@
 import React from 'react';
-import PieChart from '../../components/ChartPie/ChartPie';
+import ChartPie from '../../components/ChartPie/ChartPie';
 import Grid from '../../components/Grid/Grid';
 import Row from '../../components/Row/Row';
 import Col from '../../components/Col/Col';
@@ -25,16 +25,16 @@ class Adopcion extends React.Component {
         </Row>
         <Row>
           <Col xs={12} md={6}>
-            <Selector/>
+            <Selector classicMode={true} />
           </Col>
           <Col xs={12} md={6}>
-            <DateRange/>
+            <DateRange style={styles.inputs} underlineStyle={styles.inputs.nounderline}/>
           </Col>
         </Row>
         <Row>
           <Col xs={12}>
             <div style={styles.box}>
-              <PieChart size="medium"/>
+              <ChartPie size="medium"/>
             </div>
           </Col>
         </Row>
