@@ -5,7 +5,7 @@ const styles = {
         backgroundColor: '#EEE',
         boxSizing: 'border-box',
         float: 'right',
-        minHeight: 'calc(100vh - 64px)',
+        minHeight: '100vh',
         paddingTop: '64px',
         paddingBottom: '15px',
         transition: 'width 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms',

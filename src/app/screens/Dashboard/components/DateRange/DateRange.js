@@ -53,6 +53,7 @@ class DateRange extends React.Component {
                         textFieldStyle={styles.textFieldStyle}
                         underlineStyle={styles.underlineStyle}
                         floatingLabelStyle={styles.floatingLabelStyle}
+                        inputStyle={styles.inputStyle}
                     />
                     <DatePicker
                         onChange={this.handleChangeMaxDate}
@@ -63,6 +64,8 @@ class DateRange extends React.Component {
                         style={styles.input}
                         textFieldStyle={styles.textFieldStyle}
                         underlineStyle={styles.underlineStyle}
+                        floatingLabelStyle={styles.floatingLabelStyle}
+                        inputStyle={styles.inputStyle}
                     />
                 </div>
             </MuiThemeProvider>

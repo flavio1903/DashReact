@@ -1,7 +1,6 @@
 const styles = {
     input: {
-        backgroundColor: '#FFF',
-        display: 'inline-block',
+        /*backgroundColor: '#FFF',*/
         display: 'inline-block',
         height: '52px',
         paddingLeft: '15px',
