@@ -1,6 +1,6 @@
 import React from 'react';
 import FaBarChart from 'react-icons/lib/fa/bar-chart';
-import FaUser from 'react-icons/lib/fa/user';
+import FaHeadPhones from 'react-icons/lib/fa/headphones';
 import FaCogs from 'react-icons/lib/fa/cogs';
 import FaGroup from 'react-icons/lib/fa/group';
 import FaPowerOff from 'react-icons/lib/fa/power-off';
@@ -18,7 +18,7 @@ const links = [
     },
     {
         text: 'Atención al cliente',
-        icon: <FaUser />,
+        icon: <FaHeadPhones />,
         items: [
             {text: 'Perfil de cliente',link: '/perfil'},
             {text: 'Video Chat',link: '/videochat'}
