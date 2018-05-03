@@ -6,22 +6,17 @@ import styles from './styles';
 
 const items = [];
 
-var stylesSelector = {
-    style: styles.classicMode.style,
-    underlineStyle: styles.classicMode.underlineStyle,
-    menuStyle: styles.classicMode.menuStyle,
-    labelStyle: styles.classicMode.labelStyle,
-    iconStyle: styles.classicMode.iconStyle
-};
-
 for (let i = 0; i < 100; i++ ) {
   items.push(<MenuItem value={i} key={i} primaryText={`Item ${i}`} />);
 }
 
 export default class Selector extends React.Component {
-    state = {
-        value: 10
-    };
+    constructor(props) {
+        super();
+        this.state = {
+            value: 10
+        };
+    }
     
     handleChange = (event, index, value) => {
         this.setState({value});
@@ -35,11 +30,11 @@ export default class Selector extends React.Component {
                 value={this.state.value}
                 onChange={this.handleChange}
                 maxHeight={200}
-                style={stylesSelector.style}
-                underlineStyle={stylesSelector.underlineStyle}
-                menuStyle={stylesSelector.menuStyle}
-                labelStyle={stylesSelector.labelStyle}
-                iconStyle={stylesSelector.iconStyle}
+                style={styles.input}
+                underlineStyle={styles.underlineStyle}
+                menuStyle={styles.menuStyle}
+                labelStyle={styles.labelStyle}
+                iconStyle={styles.iconStyle}
               >
                 {items}
               </SelectField>
