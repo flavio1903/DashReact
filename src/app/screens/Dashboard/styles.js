@@ -1,4 +1,4 @@
-import mediaqueries from '../../config/MediaQueries'
+import mediaqueries from '../../config/mediaQueries'
 
 const styles = {
     content: {

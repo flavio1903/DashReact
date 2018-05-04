@@ -1,4 +1,4 @@
-import colors from '../../../../config/Colors'
+import colors from '../../../../config/colors'
 
 const styles = {
     box: {

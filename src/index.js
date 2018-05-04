@@ -5,7 +5,7 @@ import { Router, Route, browserHistory } from 'react-router';
 import { BrowserRouter } from 'react-router-dom'
 import RoutesConfig from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker';
-import routes from './app/config/Routes';
+import routes from './app/config/routes';
 import Dashboard from './app/screens/Dashboard/index';
 import Radium, {StyleRoot} from "radium";
 

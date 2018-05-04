@@ -1,4 +1,4 @@
-import ScreenSizes from './ScreenSizes'
+import ScreenSizes from './screenSizes'
 
 export default {
     small_and_down: '@media screen and (max-width: ' + (ScreenSizes.width.medium - 1) + 'px)',
